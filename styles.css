@@ -1,0 +1,203 @@
+/* reset elements */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+}
+
+ li, li input, input, li input:focus {
+     border: none;
+     outline: none;
+     list-style: none;
+ }
+
+/* background div */
+#background-container {
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    justify-content: center;
+    background: hsl(185, 41%, 84%);
+}
+
+/* background title */
+#title {
+    font-size: 1.4rem;
+    text-align: center;
+    line-height: 1.4rem;
+    letter-spacing: .3rem;
+    color:hsl(186, 14%, 43%);
+    margin: 100px 10px 50px 10px;
+ }
+
+ /* main container */
+ #main-container {
+     width: 100%;
+     display: flex;
+     padding: 20px;
+     flex-wrap: wrap;
+     max-width: 780px;
+     margin-bottom: 200px;
+     border-radius: 20px;
+     justify-content: center;
+     background: hsl(0, 0%, 100%);
+ }
+
+ /* form container */
+ #form-container {
+     margin: 10px;
+     padding: 10px;
+     max-width: 330px;
+ }
+
+ .form-fields {
+     padding: 12px;
+ }
+
+ .form-titles {
+     display:inline-flex;
+     width: 100%;
+     font-size: 16px;
+     justify-content: space-between;
+     margin: 0px 0px 10px 0px;
+     color: hsl(186, 14%, 43%);
+}
+
+
+ .form-inputs {
+     width: 100%;
+     height: 30px;
+     margin: 10px 0px;
+     font-size: 18px;
+     text-align: right;
+     font-weight: bold;
+     border-radius: 2px ;
+     color:hsl(183, 100%, 15%);
+     background: hsl(189, 41%, 97%);
+     background-repeat: no-repeat;
+     background-position: 10px 50%;
+     background-image: url(/images/icon-dollar.svg);
+    }
+
+    .form-inputs:focus {
+        outline: solid hsl(172, 67%, 45%);
+    }
+
+
+ #percentajes {
+     gap: 10px;
+     margin-top: 10px;
+     display: grid;
+    grid-template-columns: repeat(auto-fill,31%);
+    grid-auto-rows: 50px;
+}
+
+#percentajes li {
+    padding: 5px;
+    font-size: 24px;
+    border-radius: 5px;
+    text-align: center;
+    color:hsl(189, 41%, 97%);
+    background-color:hsl(183, 100%, 15%);
+}
+
+#percentajes input {
+    width: 100%;
+    margin: 0px;
+    height: 50px;
+    font-size: 24px;
+    text-align:center;
+    font-weight: bold;
+    border-radius: 5px;
+    background-image: none;
+    color: hsl(186, 14%, 43%);
+}
+
+#percentajes input:focus{
+    outline: solid hsl(172, 67%, 45%);
+}
+
+#people-input{
+    border-radius: 2px;
+    background-image: url(/images/icon-person.svg);
+    background-position: 10px 50%;
+}
+
+#people-input:focus {
+    outline: solid hsl(172, 67%, 45%);
+}
+
+/* end of form container */
+
+/* output container */
+ #output-container {
+     width: 100%;
+     max-width: 330px;
+    margin: 10px;
+    padding: 10px;
+    color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    background-color: hsl(183, 100%, 15%);
+}
+
+/* output fields */
+.output-fields {
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.output-fieldst:nth-child(1) {
+    margin-top: 20px;
+}
+
+#output-titles {
+    font-size: 18px;
+}
+
+#output-titles span {
+    font-size: 14px;
+    color: hsl(186, 14%, 43%);
+}
+
+.output {
+    font-size: 200%;
+    font-weight: bold;
+    color:hsl(172, 67%, 45%);
+}
+
+.output::before{
+    content: "$";
+}
+/* end of output fields */
+
+/* reset button */
+#reset-button {
+    display: block;
+    margin-top: 56%;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 2px;
+    color: hsl(183, 100%, 15%);
+    background:hsl(172, 67%, 45%);
+}
+
+#reset-button:active {
+    background-color:hsl(0, 0%, 100%);
+}
+
+/* atribution Frontend Mentor */
+
+.attribution { 
+    color: hsl(183, 100%, 15%);
+    font-size: 11px; 
+    text-align: center; 
+    background:hsl(172, 67%, 45%);
+
+}
+.attribution a { 
+    color: hsl(215, 88%, 10%); 
+}

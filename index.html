@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Font-Family -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  <!-- background div -->
+  <div id="background-container">
+
+    <!-- background title -->
+    <h1 id="title">SPLI</br>TTER</h1>
+    
+    <!-- main container -->
+    <main id="main-container">
+
+      <!-- form container -->
+      <section id="form-container">
+        
+        <!-- form fields -->
+        <div class="form-fields">
+          <span class="form-titles">Bill<span id="bill-err"></span> </span> 
+          <input class="form-inputs" id="bill" type="text">
+        </div>
+        
+        <div class="form-fields">
+          <span class="form-titles">Select Tip %</span>
+          <ul id="percentajes">
+            <li id="percent5" value="5">5%</li>
+            <li id="percent10" value="10">10%</li>
+            <li id="percent15" value="15">15%</li>
+            <li id="percent25" value="25">25%</li>
+            <li id="percent50" value="50">50%</li>
+            <input id="input-percent" class="form-inputs"type="text" placeholder="Custom">
+          </ul>
+        </div>
+
+        <div class="form-fields">
+          <span class="form-titles">number of people <span id="people-err"></span></span> 
+          <input id="people-input" 4  class="form-inputs" type="text">
+
+        </div>
+        <!-- end of form fields -->
+      </section>
+      <!-- end of form container -->
+
+      <!-- output container -->
+      <section id="output-container" >
+      
+        <!-- output fields -->
+        <div class="output-fields">
+          <span id="output-titles">Tip Amount <br> <span>/ person</span></span>
+          <span class="output" id="output1">00.0</span>
+        </div>
+      
+        <div class="output-fields">
+            <span id="output-titles">Total <br> <span>/ person</span></span>
+            <span class="output" id="output2">00.0</span>
+        </div>
+        <!-- end of output fields -->
+
+        <span id="reset-button">Reset</span>
+
+      </section>
+      <!-- end of output container -->
+    
+    </main>
+    <!-- end of main container -->
+  </div>
+
+  <!-- attribution -->
+  <div class="attribution"> 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://twitter.com/CarlosMateo092">@CarlosMateo092.</a> developed in firefox.
+  </div>
+
+  <!-- javascript -->
+  <script src="javascript.js"></script>
+</body>
+</html>
